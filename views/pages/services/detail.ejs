@@ -1,28 +1,29 @@
-<% layout('../../layouts/main') -%>
-
 <div class="service-detail">
-    <h2><%= service.name %></h2>
-    
-    <% if(service.imageUrl) { %>
-        <img src="<%= service.imageUrl %>" alt="<%= service.name %>" class="service-image">
+  <h2><%= service.name %></h2>
+
+  <% if(service.imageUrl) { %>
+  <img
+    src="<%= service.imageUrl %>"
+    alt="<%= service.name %>"
+    class="service-image"
+  />
+  <% } %>
+
+  <div class="service-description">
+    <h3>Description</h3>
+    <p><%= service.description %></p>
+  </div>
+
+  <% if(service.pricePerHour || service.pricePerDay) { %>
+  <div class="service-pricing">
+    <h3>Tarifs</h3>
+    <% if(service.pricePerHour) { %>
+    <p><strong>Prix par heure:</strong> $<%= service.pricePerHour %></p>
+    <% } %> <% if(service.pricePerDay) { %>
+    <p><strong>Prix par jour:</strong> $<%= service.pricePerDay %></p>
     <% } %>
-    
-    <div class="service-description">
-        <h3>Description</h3>
-        <p><%= service.description %></p>
-    </div>
-    
-    <% if(service.pricePerHour || service.pricePerDay) { %>
-        <div class="service-pricing">
-            <h3>Tarifs</h3>
-            <% if(service.pricePerHour) { %>
-                <p><strong>Prix par heure:</strong> $<%= service.pricePerHour %></p>
-            <% } %>
-            <% if(service.pricePerDay) { %>
-                <p><strong>Prix par jour:</strong> $<%= service.pricePerDay %></p>
-            <% } %>
-        </div>
-    <% } %>
-    
-    <a href="/services" class="btn">Retour à la liste</a>
+  </div>
+  <% } %>
+
+  <a href="/services" class="btn">Retour à la liste</a>
 </div>

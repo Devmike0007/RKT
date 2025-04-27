@@ -1,0 +1,27 @@
+<div class="property-detail">
+  <h2><%= property.name %></h2>
+
+  <% if(property.imageUrl) { %>
+  <img
+    src="<%= property.imageUrl %>"
+    alt="<%= property.name %>"
+    class="property-image"
+  />
+  <% } %>
+
+  <div class="property-meta">
+    <p><strong>Catégorie:</strong> <%= property.category %></p>
+    <% if(property.subcategory) { %>
+    <p><strong>Sous-catégorie:</strong> <%= property.subcategory %></p>
+    <% } %> <% if(property.location) { %>
+    <p><strong>Disponible à:</strong> <%= property.location %></p>
+    <% } %>
+  </div>
+
+  <div class="property-description">
+    <h3>Description</h3>
+    <p><%= property.description %></p>
+  </div>
+
+  <a href="/propertys" class="btn">Retour à la liste</a>
+</div>

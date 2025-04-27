@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %> - Établissements RKT</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <%- include('../partials/header') %>
-    <%- include('../partials/navigation') %>
-    
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %> - RKT</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <%- style %>
+    <!-- Pour les styles spécifiques aux pages -->
+  </head>
+  <body>
+    <%- include('../partials/header') %> <%- include('../partials/navigation')
+    %>
+
+    <!-- Conteneur principal IMPORTANT -->
     <main class="container">
-        <%- body %>
+      <%- body %>
+      <!-- Le contenu des pages s'injecte ici -->
     </main>
-    
+
     <%- include('../partials/footer') %>
     <script src="/js/main.js"></script>
-</body>
+    <%- script %>
+    <!-- Pour les scripts spécifiques aux pages -->
+  </body>
 </html>

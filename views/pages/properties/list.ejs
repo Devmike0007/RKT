@@ -1,0 +1,39 @@
+<h2>Nos proprietes</h2>
+
+<div class="filters">
+  <form method="GET" action="/properties">
+    <select name="category">
+      <option value="">Toutes catégories</option>
+      <option value="construction">Matériaux de construction</option>
+      <option value="fresh_food">Vivres frais</option>
+      <option value="combustible_consumables">Consommables combustibles</option>
+      <option value="non_combustible_consumables">
+        Consommables non combustibles
+      </option>
+      <option value="fuel">Carburant</option>
+      <option value="metalwork">Menuiserie métallique</option>
+      <option value="sheets">Tôles</option>
+      <option value="diamonds_gold">Diamant et Or</option>
+      <option value="vehicles">Véhicules</option>
+    </select>
+    <button type="submit">Filtrer</button>
+  </form>
+</div>
+
+<div class="property-list">
+  <% properties.forEach(property => { %>
+  <div class="property-item">
+    <% if(property.imageUrl) { %>
+    <img src="<%= property.imageUrl %>" alt="<%= property.name %>" />
+    <% } %>
+    <div class="property-info">
+      <h3><%= property.name %></h3>
+      <p class="category"><%= property.category %></p>
+      <p class="description">
+        <%= property.description.substring(0, 100) %>...
+      </p>
+      <a href="/properties/<%= property.id %>" class="btn">Voir détails</a>
+    </div>
+  </div>
+  <% }) %>
+</div>

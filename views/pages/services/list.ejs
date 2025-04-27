@@ -1,18 +1,16 @@
-<% layout('../../layouts/main') -%>
-
 <h2>Nos services</h2>
 
 <div class="service-list">
-    <% services.forEach(service => { %>
-        <div class="service-item">
-            <% if(service.imageUrl) { %>
-                <img src="<%= service.imageUrl %>" alt="<%= service.name %>">
-            <% } %>
-            <div class="service-info">
-                <h3><%= service.name %></h3>
-                <p><%= service.description.substring(0, 150) %>...</p>
-                <a href="/services/<%= service.id %>" class="btn">En savoir plus</a>
-            </div>
-        </div>
-    <% }) %>
+  <% services.forEach(service => { %>
+  <div class="service-item">
+    <% if(service.imageUrl) { %>
+    <img src="<%= service.imageUrl %>" alt="<%= service.name %>" />
+    <% } %>
+    <div class="service-info">
+      <h3><%= service.name %></h3>
+      <p><%= service.description.substring(0, 150) %>...</p>
+      <a href="/services/<%= service.id %>" class="btn">En savoir plus</a>
+    </div>
+  </div>
+  <% }) %>
 </div>
