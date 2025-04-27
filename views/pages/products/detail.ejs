@@ -1,0 +1,26 @@
+<% layout('../../layouts/main') -%>
+
+<div class="product-detail">
+    <h2><%= product.name %></h2>
+    
+    <% if(product.imageUrl) { %>
+        <img src="<%= product.imageUrl %>" alt="<%= product.name %>" class="product-image">
+    <% } %>
+    
+    <div class="product-meta">
+        <p><strong>Catégorie:</strong> <%= product.category %></p>
+        <% if(product.subcategory) { %>
+            <p><strong>Sous-catégorie:</strong> <%= product.subcategory %></p>
+        <% } %>
+        <% if(product.location) { %>
+            <p><strong>Disponible à:</strong> <%= product.location %></p>
+        <% } %>
+    </div>
+    
+    <div class="product-description">
+        <h3>Description</h3>
+        <p><%= product.description %></p>
+    </div>
+    
+    <a href="/products" class="btn">Retour à la liste</a>
+</div>

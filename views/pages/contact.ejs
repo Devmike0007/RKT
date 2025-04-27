@@ -1,0 +1,54 @@
+<% layout('../layouts/main') -%>
+
+<h2>Contactez-nous</h2>
+
+<div class="contact-container">
+    <div class="contact-info">
+        <h3>Nos coordonnées</h3>
+        <address>
+            <p><strong>Établissements RKT</strong></p>
+            <p>Adresse: [Votre adresse physique]</p>
+            <p>Téléphones: </p>
+            <ul>
+                <li>+243 XX XXX XXXX</li>
+                <li>+243 XX XXX XXXX</li>
+                <li>+243 XX XXX XXXX</li>
+                <li>+243 XX XXX XXXX</li>
+            </ul>
+            <p>Email: contact@etablissements-rkt.com</p>
+            <p>WhatsApp: [Numéro WhatsApp]</p>
+        </address>
+    </div>
+
+    <div class="contact-form">
+        <h3>Envoyez-nous un message</h3>
+        <form action="/api/contact" method="POST">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </div>
+</div>

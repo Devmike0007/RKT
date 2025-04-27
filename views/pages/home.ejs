@@ -1,0 +1,31 @@
+<% layout('layouts/main') -%>
+
+<h2>Bienvenue chez Établissements RKT</h2>
+
+<section class="featured-products">
+    <h3>Nos produits phares</h3>
+    <div class="product-grid">
+        <% featuredProducts.forEach(product => { %>
+            <div class="product-card">
+                <% if(product.imageUrl) { %>
+                    <img src="<%= product.imageUrl %>" alt="<%= product.name %>">
+                <% } %>
+                <h4><%= product.name %></h4>
+                <p><%= product.description.substring(0, 100) %>...</p>
+                <a href="/products/<%= product.id %>" class="btn">Voir détails</a>
+            </div>
+        <% }) %>
+    </div>
+</section>
+
+<section class="our-services">
+    <h3>Nos services</h3>
+    <ul>
+        <% services.forEach(service => { %>
+            <li>
+                <h4><%= service.name %></h4>
+                <p><%= service.description.substring(0, 150) %>...</p>
+            </li>
+        <% }) %>
+    </ul>
+</section>
