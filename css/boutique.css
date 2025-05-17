@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../css/font/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf') format('woff2'),
+         url('../css/font/Inter/Inter-VariableFont_opsz\,wght.ttf') format('woff'),
+         url('../css/font/Inter/static/Inter_28pt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    background-color: #202020;
+    color: white;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .item{
+    margin: 20px auto;
+    width: 70%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #575656ad;
+    border-radius: 10px;
+}
+.item .text{
+    display: flex;
+    flex-direction: column;
+}
+.item .button{
+    float: right;
+    margin-top: 20px;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #575656;
+}
+.item #far{
+    padding: 10px 10px;
+    width: 130px;
+    height: 130px;
+}
+.button img{
+    width: 20px;
+    height: 30px;
+    padding: 0 20px;
+}
