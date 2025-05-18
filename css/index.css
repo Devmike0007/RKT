@@ -18,13 +18,10 @@ body{
 }
 
 main{
-    max-width: 100%;
     display: flex;
-    flex-direction: row;
+    gap: 60px;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10%;
-    padding: 50px 40px;
+    padding: 60px;
 }
 #text{
     background: linear-gradient(to right, #5a5a5a, #dfdfdf);
@@ -33,24 +30,21 @@ main{
     color: transparent;
 }
 .cadre-welcome{
-    width: 95%;
+    height: auto;
+    width: 100%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30%;
+    gap: 30px;
 }
 main .welcome{
     display: flex;
     flex-direction: column;
-    width: 370px;
 }
 main .produits{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+    gap: 10px;
     width: 430px;
     height: 300px;
 }
@@ -63,61 +57,86 @@ main .produits{
     max-width: 100%;
 }
 #btn{
-    padding: 5px 20px;
-    margin-top: 20px;
-    width: 70px;
+
+    width: 100px;
     border-radius: 10px;
     background-color: #575656;
     text-decoration: none;
     color: white;
 }
 main .services, main .temoignage{
-    margin: 20px auto;
-    margin-bottom: 140px;
-    width: 80%;
-    height: 80px;
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
 }
 .services .item, .temoignage .item{
-    width: 240px;
-    height: 100%;
+    width: 200px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     padding: 10px 10px;
+}
+.temoignage .item{
+    width: 400px;
+}
+.temoignage .item P{
+    font-size: 20px;
+    text-align: justify;
 }
 .item p{
-    font-size: 12px;
+    font-size: 11px;
 }
 .item img{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 }
 main .aleatoire{
-    width: 90%;
-    height: 350px;
-    padding: 10px 10px;
+    width: 100%;
+    height: auto;
     background-color: #5756565b;
     border-radius: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    
      
 }
 .aleatoire .text{
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
     height: 200px;
-    padding: 20px 20px;
+    padding: 0px 20px;
+}
+.aleatoire .text h1{
+    font-size: 35px;
+}
+.aleatoire .text p{
+    text-align: justify;
+    font-size: 20px;
+}
+.aleatoire .text a{
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #575656;
+    text-decoration: none;
+    color: white;
 }
 .aleatoire .image{
-    width: 450px;
-    height: 300px;
-    margin: 20px 0 20px 20px;
-    margin-right: 20px;
+
+    border-radius: 0 40px;
+    overflow: hidden;
 }
 .image img{
-    width: 100%;
-    max-width: 100%;
+    height: 100%;
 }

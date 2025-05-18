@@ -33,8 +33,8 @@ body{
     margin: 20px auto;
 }
 .container{
-    width: 70%;
-    height: 400px;
+    width: 100%;
+    height: 500px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -56,7 +56,7 @@ body{
 }
 .element{
     width: 450px;
-    height: 230px;
+    height: 400px;
     overflow-x: hidden;
     overflow-y: hidden;
     display: flex;
@@ -69,8 +69,8 @@ body{
 }
 .element .item{
     flex-shrink: 0;
-    width: 120px;
-    height: 180px;
+    width: 250px;
+    height: 300px;
     background-color: #575656a8;
     text-align: center;
     border-radius: 10px;
