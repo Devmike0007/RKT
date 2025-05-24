@@ -1,0 +1,90 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/css/font/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf")
+      format("woff2"),
+    url("/css/font/Inter/Inter-VariableFont_opsz\,wght.ttf") format("woff"),
+    url("/css/font/Inter/static/Inter_28pt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  background-color: #202020;
+  color: white;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 35px;
+  margin: 10px 0;
+}
+
+button {
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #575656;
+}
+
+button img {
+  width: 20px;
+  height: 30px;
+  padding: 0 20px;
+}
+input[type="search"] {
+  width: 200px;
+  padding: 10px 10px;
+  background: #53505088;
+  border-radius: 10px;
+  border: none;
+}
+.container-produit {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+.container-produit .categorie {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.container-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container-cards .card {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  background-color: #494949;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+.card img {
+  width: 80%;
+  max-width: 100%;
+}

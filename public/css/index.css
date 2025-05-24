@@ -1,0 +1,141 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/css/font/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf")
+      format("woff2"),
+    url("/css/font/Inter/Inter-VariableFont_opsz\,wght.ttf") format("woff"),
+    url("/css/font/Inter/static/Inter_28pt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  background-color: #202020;
+  color: white;
+}
+
+main {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding: 60px;
+}
+#text {
+  background: linear-gradient(to right, #5a5a5a, #dfdfdf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.cadre-welcome {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+main .welcome {
+  display: flex;
+  flex-direction: column;
+}
+main .produits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 430px;
+  height: 300px;
+}
+.produits .box {
+  width: 200px;
+  height: 130px;
+}
+.box img {
+  width: 100%;
+  max-width: 100%;
+}
+#btn {
+  width: 100px;
+  border-radius: 10px;
+  background-color: #575656;
+  text-decoration: none;
+  color: white;
+}
+main .services,
+main .temoignage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.services .item,
+.temoignage .item {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+}
+.temoignage .item {
+  width: 400px;
+}
+.temoignage .item P {
+  font-size: 20px;
+  text-align: justify;
+}
+.item p {
+  font-size: 11px;
+}
+.item img {
+  width: 60px;
+  height: 60px;
+}
+main .aleatoire {
+  width: 100%;
+  height: auto;
+  background-color: #5756565b;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.aleatoire .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+  height: 200px;
+  padding: 0px 20px;
+}
+.aleatoire .text h1 {
+  font-size: 35px;
+}
+.aleatoire .text p {
+  text-align: justify;
+  font-size: 20px;
+}
+.aleatoire .text a {
+  padding: 5px;
+  width: 120px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #575656;
+  text-decoration: none;
+  color: white;
+}
+.aleatoire .image {
+  border-radius: 0 40px;
+  overflow: hidden;
+}
+.image img {
+  height: 100%;
+}

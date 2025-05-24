@@ -2,6 +2,15 @@ const express = require("express");
 const router = express.Router();
 const { Product, Service, Property } = require("../models");
 
+router.get("/nouveaute", async (req, res) => {
+  res.render("pages/nouveaute", { title: "Nouveaute" });
+});
+router.get("/boutique", async (req, res) => {
+  res.render("pages/boutique", { title: "Boutique" });
+});
+router.get("/humanAide", async (req, res) => {
+  res.render("pages/humanAide", { title: "humanAide" });
+});
 router.get("/", async (req, res) => {
   try {
     const featuredProducts = await Product.findAll({

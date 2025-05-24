@@ -1,0 +1,38 @@
+header{
+    width: 100%;
+}
+nav{
+    max-width: 100%;
+    height: 30px;
+    background-color: #d9d9d927;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+nav .links{
+    margin-right: 40px;
+}
+nav .logo{
+    margin-left: 40px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+#btn{
+    padding: 5px 20px;
+    margin-top: 20px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: #575656;
+    text-decoration: none;
+    color: white;
+}
+#text{
+    background: linear-gradient(to right, #5a5a5a, #dfdfdf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
 const ejs = require("ejs");
-const expressLayouts = require("express-ejs-layouts");
+// const expressLayouts = require("express-ejs-layouts");
 
 // Import routes
 const authRoutes = require("./routes/authRoutes");
@@ -33,10 +33,6 @@ app.use((req, res, next) => {
 // Configuration du moteur de template
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
-app.use(expressLayouts);
-app.set("layout", "layouts/main"); // Layout par défaut
-app.set("layout extractScripts", true); // Optionnel: pour les scripts
-app.set("layout extractStyles", true); // Optionnel: pour les CSS
 
 // Middleware standard
 app.use(cors());
@@ -56,7 +52,6 @@ app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).render("errors/500", {
     title: "Erreur serveur",
-    layout: "layouts/main", // Spécification explicite du layout
   });
 });
 
